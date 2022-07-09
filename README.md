@@ -4,7 +4,7 @@
 
 ### Demo ⭐
 
-[Demo del juego](https://rollingcodeschool.github.io/2-generaciones/)
+[Demo - web de generaciones](https://rollingcodeschool.github.io/2-generaciones/)
 
 
 ___

@@ -18,7 +18,11 @@ function generaciones(e) {
   e.preventDefault();
   console.log("desde generaciones");
   if (
-    nombre.value.trim().length> 0 && edad.value.trim().length> 0 && dni.value.trim().length> 0 && fechaNacimiento.value.trim().length> 0 ) {
+    nombre.value.trim().length > 0 &&
+    edad.value.trim().length > 0 &&
+    dni.value.trim().length > 0 &&
+    fechaNacimiento.value.trim().length > 0
+  ) {
     // creo el objeto persona
     const personaNueva = new Persona(
       nombre.value,
@@ -43,17 +47,14 @@ function generaciones(e) {
       let panelDatos = document.querySelector("#detalle");
       panelDatos.innerHTML = personaNueva.mostrarGeneracion();
     });
-  }else{
-      alerta.innerHTML='Debe cargar todos los datos';
+  } else {
+    alerta.innerHTML = "Debe cargar todos los datos";
   }
 }
 
 function resetearDatos() {
   formGeneraciones.reset();
   document.querySelector("#detalle").innerHTML = "";
-  //quitar la clase validate a los input
-  for(let input = 0; input <= 6; input++)
-    formGeneraciones.children[input].children[1].className = 'form-control'
 }
 
 function mostrarDatosPersona(persona) {
